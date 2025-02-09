@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Hangfire" />
+    <PackageReference Include="Hangfire.InMemory" />
+    <PackageReference Include="NLog.Targets.Seq" />
+    <PackageReference Include="Skender.Stock.Indicators" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Npgsql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oid85.HomeBot.Common\Oid85.HomeBot.Common.csproj" />
+    <ProjectReference Include="..\Oid85.HomeBot.Domain\Oid85.HomeBot.Domain.csproj" />
+    <ProjectReference Include="..\Oid85.HomeBot.External\Oid85.HomeBot.External.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Interfaces\Repositories\" />
+    <Folder Include="Models\Requests\" />
+  </ItemGroup>
+</Project>
